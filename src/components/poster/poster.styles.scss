@@ -1,0 +1,64 @@
+$color-primary: #55c57a;
+$color-primary-light: #7ed56f;
+$color-primary-dark:#28b485;
+
+.header{
+    background-color: $color-primary-light;
+    min-height: 50vh;
+    position: relative;
+
+    &__text-box{
+        position: absolute;
+        top: 5vh;
+        left: 0;
+        text-align: left;
+        &--1{
+            margin:0;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        &--2{
+            margin:0;
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+        &--description{
+            margin:0;
+            font-size: 1rem;
+            font-weight: 200;
+        }
+        &--button {
+            &,
+            /* Pseudo Classes - to set elements under special conditions */
+            &:link,
+            &:visited {
+                text-transform: uppercase;
+                text-decoration: none;
+                /* Top right bottom left */
+                padding: 1.5rem 4rem;
+                display: inline-block;
+                border-radius: 10rem;
+                /* All the animation in .2s for class btn (including all the transform ...) */
+                transition: all .2s;
+                position: relative;
+
+                //Change For button elements
+                border: none;
+                cursor: pointer;
+                margin-top: 1.5rem;
+                
+            }
+
+            &:hover, &:focus {
+                transform: translateY(-3px);
+                /* 0 means no shadow in the x direction, 10px means 10px of shadow down, 20px means blurriness, rgba means opacity */
+                box-shadow: 0 1rem 2rem rgba(#111,.8);
+            }
+
+            &:active {
+                transform: translateY(-1px);
+                box-shadow: 0 .5rem 1rem rgba(#111,.2);
+    }
+        }
+    }
+}

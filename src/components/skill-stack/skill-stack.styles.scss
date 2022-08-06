@@ -1,0 +1,48 @@
+@import '../../../sass/abstracts/variables';
+
+.skill-stack{
+    float: left;
+    width: 45%;
+    margin: 0 2.5%;
+    &__name {
+        font-weight: 600;
+    }
+
+    &__container {
+        width: 100%; /* Full width */
+        background-color: #ddd; /* Grey background */
+    }
+
+    &__percentage {
+        text-align: right; /* Right-align text */
+        color: white; /* White text color */
+        background-color: $color_primary-dark
+    }
+}
+
+.js {width: 90%;} /* Green */
+.react {width: 75%;} /* Blue */
+.node {width: 65%;} /* Red */
+.html_css {width: 80%;} /* Dark Grey */
+.php {width: 70%;} /* Dark Grey */
+
+.language-stack{
+    float: left;
+    width: 45%;
+    margin: 0 2.5%;
+    &__name {
+        font-weight: 600;
+    }
+
+    &__container {
+        width: 100%; /* Full width */
+        background-color: #ddd; /* Grey background */  
+    }
+
+    &__percentage {
+        text-align: right; /* Right-align text */
+        color: white; /* White text color */
+        background-color: $color_primary-dark
+    }
+}
+
